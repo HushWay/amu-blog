@@ -53,10 +53,11 @@ export const defaultContentPageLayout: PageLayout = {
       ],
     }),
     Component.Explorer({
-      title: "博客",
+      title: "记忆碎片",
       folderDefaultState: "open",
       folderClickBehavior: "link",
       useSavedState: false,
+      filterFn: (node) => node.name !== "assets",
     }),
   ],
   right: [
