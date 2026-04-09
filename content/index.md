@@ -20,7 +20,7 @@ title: 阿木纪念档案
 <p align="center">
 	<img src="./assets/阿木回头-2024-8-31.jpg" width="420" alt="阿木回头" />
 	<br />
-	<em>阿木回头 · 2024-08-31</em>
+	<em>阿木 · 江边 · 2024-08-31</em>
 </p>
 
 ---
