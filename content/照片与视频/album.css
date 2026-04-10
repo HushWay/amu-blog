@@ -1,0 +1,75 @@
+.album-grid {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+	gap: 12px;
+	margin: 0.8rem 0 1.2rem;
+}
+
+.album-grid figure {
+	margin: 0;
+	border: 1px solid var(--lightgray);
+	border-radius: 10px;
+	overflow: hidden;
+	background: var(--light);
+	transition: transform 180ms ease, box-shadow 180ms ease, border-color 180ms ease;
+}
+
+.album-grid img,
+.album-grid video {
+	width: 100%;
+	aspect-ratio: 4 / 3;
+	object-fit: cover;
+	margin: 0;
+	display: block;
+	border-radius: 0;
+}
+
+.album-grid figcaption {
+	font-size: 0.82rem;
+	color: var(--darkgray);
+	padding: 0.45rem 0.6rem;
+	line-height: 1.35;
+}
+
+.album-grid figure:hover {
+	transform: translateY(-2px);
+	box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+	border-color: color-mix(in srgb, var(--secondary) 35%, var(--lightgray));
+}
+
+.album-grid .album-item {
+	display: block;
+	position: relative;
+	cursor: zoom-in;
+	width: 100%;
+	padding: 0;
+	border: 0;
+	background: transparent;
+	text-align: left;
+}
+
+.album-grid .album-item::after {
+	content: "放大";
+	position: absolute;
+	right: 8px;
+	top: 8px;
+	padding: 0.15rem 0.45rem;
+	font-size: 0.72rem;
+	border-radius: 99px;
+	background: rgba(0, 0, 0, 0.45);
+	color: #fff;
+	opacity: 0;
+	transform: translateY(-2px);
+	transition: opacity 160ms ease, transform 160ms ease;
+}
+
+.album-grid figure:hover .album-item::after {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+@media (max-width: 700px) {
+	.album-grid {
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+	}
+}
