@@ -63,6 +63,6 @@
 ---
 
 ## 常用地址
-- 博客地址：hushway.github.io/amu-blog
+- [博客地址](https://hushway.github.io/amu-blog/)
 - 首页目录： [content/index.md](content/index.md)
 - 相册数据： [content/照片与视频/album-data.js](content/%E7%85%A7%E7%89%87%E4%B8%8E%E8%A7%86%E9%A2%91/album-data.js)
