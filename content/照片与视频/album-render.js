@@ -3,6 +3,18 @@
     return "../照片与视频/"
   }
 
+  function forceTop() {
+    if ("scrollRestoration" in history) {
+      history.scrollRestoration = "manual"
+    }
+
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => {
+        window.scrollTo({ top: 0, left: 0 })
+      })
+    })
+  }
+
   function makeFigure(item) {
     const figure = document.createElement("figure")
     const button = document.createElement("button")
@@ -45,10 +57,21 @@
   }
 
   if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", renderAlbum, { once: true })
+    document.addEventListener(
+      "DOMContentLoaded",
+      () => {
+        renderAlbum()
+        forceTop()
+      },
+      { once: true },
+    )
   } else {
     renderAlbum()
+    forceTop()
   }
 
-  document.addEventListener("nav", renderAlbum)
+  document.addEventListener("nav", () => {
+    renderAlbum()
+    forceTop()
+  })
 })()
