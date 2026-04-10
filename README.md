@@ -1,7 +1,6 @@
 # 维护说明
 
-这份说明给共同维护者使用：
-**不需要安装任何软件**，只在 GitHub 网页就能完成内容更新。
+这是[阿木](hushway.github.io/amu-blog)的博客，这份说明给共同维护者使用，只在 GitHub 网页就能完成内容更新（复杂的更新pull到本地再push更方便）。
 
 ---
 
@@ -63,7 +62,7 @@
 
 ---
 
-## 常用文件入口
-
+## 常用地址
+- 博客地址：hushway.github.io/amu-blog
 - 首页目录： [content/index.md](content/index.md)
 - 相册数据： [content/照片与视频/album-data.js](content/%E7%85%A7%E7%89%87%E4%B8%8E%E8%A7%86%E9%A2%91/album-data.js)
