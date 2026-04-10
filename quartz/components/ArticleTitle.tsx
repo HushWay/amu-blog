@@ -39,9 +39,8 @@ ArticleTitle.css = `
 
 .github-inline {
   display: inline-flex;
-  align-items: center;
-  justify-content: center;
   margin-left: 0.35rem;
+  vertical-align: middle;
   color: inherit;
   opacity: 0.85;
 }

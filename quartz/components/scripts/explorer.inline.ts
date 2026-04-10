@@ -225,10 +225,13 @@ async function setupExplorer(currentSlug: FullSlug) {
     if (scrollTop) {
       explorerUl.scrollTop = parseInt(scrollTop)
     } else {
-      // try to scroll to the active element if it exists
-      const activeElement = explorerUl.querySelector(".active")
+      // Keep active item visible by scrolling only the explorer container.
+      // Avoid Element.scrollIntoView(), which can also move the main document.
+      const activeElement = explorerUl.querySelector(".active") as HTMLElement | null
       if (activeElement) {
-        activeElement.scrollIntoView({ behavior: "smooth" })
+        const targetTop =
+          activeElement.offsetTop - explorerUl.clientHeight / 2 + activeElement.clientHeight / 2
+        explorerUl.scrollTop = Math.max(0, targetTop)
       }
     }
 
