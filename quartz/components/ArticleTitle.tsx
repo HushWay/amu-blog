@@ -27,7 +27,7 @@ const ArticleTitle: QuartzComponent = ({ fileData, displayClass }: QuartzCompone
             </a>
             <a
               class="rss-inline"
-              href="/index.xml"
+              href="/amu-blog/index.xml"
               aria-label="RSS 订阅"
               title="RSS"
             >
