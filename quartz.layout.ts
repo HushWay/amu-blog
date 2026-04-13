@@ -54,7 +54,7 @@ export const defaultContentPageLayout: PageLayout = {
     }),
     Component.Explorer({
       title: "记忆碎片",
-      folderDefaultState: "open",
+      folderDefaultState: "collapsed",
       folderClickBehavior: "link",
       useSavedState: false,
     }),

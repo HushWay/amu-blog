@@ -2,6 +2,7 @@
 title: 阿木纪念档案
 cssclasses:
   - index-page
+date: 2026-04-08
 ---
 
 <div class="hero-container">
