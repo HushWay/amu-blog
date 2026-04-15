@@ -2,7 +2,7 @@
 title: 照片与视频
 ---
 
-这里整理了阿木相关的照片与视频，相关修改方式见 [GitHub README](https://github.com/HushWay/amu-blog)。
+这里整理了阿木相关的照片与视频，相关修改方式见 [GitHub README](https://github.com/earfanfan/amu-blog)。
 
 <link rel="stylesheet" href="../照片与视频/album.css" />
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css" />

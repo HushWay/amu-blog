@@ -12,7 +12,7 @@ const ArticleTitle: QuartzComponent = ({ fileData, displayClass }: QuartzCompone
           <>
             <a
               class="github-inline"
-              href="https://github.com/HushWay/amu-blog"
+              href="https://github.com/earfanfan/amu-blog"
               target="_blank"
               rel="noopener noreferrer"
               aria-label="访问 GitHub 仓库"

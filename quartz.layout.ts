@@ -9,7 +9,7 @@ export const sharedPageComponents: SharedLayout = {
     Component.Comments({
       provider: 'giscus',
       options: {
-        repo: 'HushWay/blog',
+        repo: 'earfanfan/blog',
         repoId: 'R_kgDOQ8xrjA',
         category: 'Announcements',
         categoryId: 'DIC_kwDOQ8xrjM4C1JYZ',
