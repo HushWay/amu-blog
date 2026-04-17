@@ -160,6 +160,25 @@ button.desktop-explorer {
     margin-left: 6px;
     padding-left: 0.8rem;
     border-left: 1px solid var(--lightgray);
+
+    // soften expanded child files so parent section remains the visual anchor
+    li > a:not(.active) {
+      font-size: 1rem;
+      font-weight: $normalWeight;
+      color: var(--darkgray);
+      opacity: 0.9;
+      line-height: 1.6;
+
+      &:hover {
+        color: var(--secondary);
+        opacity: 1;
+      }
+    }
+
+    li > a.active {
+      font-size: 1rem;
+      font-weight: $normalWeight;
+    }
   }
 }
 

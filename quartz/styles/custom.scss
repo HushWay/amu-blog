@@ -278,7 +278,8 @@ article a.external {
   > h3 {
     font-size: 0.84rem !important;
     margin-bottom: 0.7rem;
-    color: var(--gray);
+    color: var(--darkgray) !important;
+    opacity: 0.7;
     font-weight: 600;
     letter-spacing: 0.08em;
     border-bottom: 1px solid color-mix(in srgb, var(--lightgray) 72%, transparent);
