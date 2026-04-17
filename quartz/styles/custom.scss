@@ -143,6 +143,32 @@ a.external {
 	text-underline-offset: 2px;
 }
 
+/* 降低强调色频率：默认中性色，悬停再强调 */
+article a.internal:not(.tag-link),
+article a.external {
+  color: var(--darkgray);
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--secondary) 45%, transparent);
+  line-height: inherit;
+
+  &:hover {
+    color: var(--secondary);
+    text-decoration-color: var(--secondary);
+  }
+}
+
+.explorer ul.overflow li > a,
+.explorer ul.overflow li > button {
+  color: var(--darkgray) !important;
+
+  &:hover {
+    color: var(--secondary) !important;
+  }
+}
+
 /* --- Index Page Specific Styles --- */
 .index-page {
   .hero-container {
