@@ -85,10 +85,10 @@ a {
   font-weight: $semiBoldWeight;
   text-decoration: none;
   transition: color 0.2s ease;
-  color: var(--secondary);
+  color: var(--darkgray);
 
   &:hover {
-    color: var(--tertiary);
+    color: var(--secondary);
   }
 
   &.internal {

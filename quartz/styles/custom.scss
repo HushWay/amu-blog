@@ -175,17 +175,12 @@ article a.external {
   }
 }
 
-.explorer ul.overflow li > a,
-.explorer ul.overflow li > button {
-  color: var(--darkgray) !important;
-
-  &:hover {
-    color: var(--secondary) !important;
-  }
-}
-
 /* --- Index Page Specific Styles --- */
 .index-page {
+  article > h1 {
+    margin-bottom: 1.35rem;
+  }
+
   .hero-container {
     margin-bottom: 2rem;
     display: grid;
@@ -201,8 +196,8 @@ article a.external {
     
     blockquote {
       position: relative;
-      margin: 0.8rem 0 1.1rem 0;
-      padding: 0.25rem 0 0.25rem 0.9rem;
+      margin: 1rem 0 1.1rem 0;
+      padding: 0.25rem 0 0.25rem 1.3rem;
       border-left: none;
       background: transparent;
       border-radius: 0;

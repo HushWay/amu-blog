@@ -122,12 +122,21 @@ button.desktop-explorer {
 
     & li > a {
       color: var(--dark);
-      opacity: 0.75;
+      opacity: 0.92;
+      font-family: var(--bodyFont);
+      font-size: 1rem;
+      font-weight: $semiBoldWeight;
+      line-height: 1.6;
       pointer-events: all;
 
       &.active {
         opacity: 1;
-        color: var(--tertiary);
+        color: var(--secondary);
+      }
+
+      &:hover {
+        color: var(--secondary);
+        opacity: 1;
       }
     }
   }
@@ -161,16 +170,20 @@ button.desktop-explorer {
   user-select: none;
 
   & div > a {
-    color: var(--secondary);
-    font-family: var(--headerFont);
-    font-size: 0.95rem;
+    color: var(--darkgray);
+    font-family: var(--bodyFont);
+    font-size: 1rem;
     font-weight: $semiBoldWeight;
-    line-height: 1.5rem;
+    line-height: 1.6;
     display: inline-block;
   }
 
   & div > a:hover {
-    color: var(--tertiary);
+    color: var(--secondary);
+  }
+
+  & div > a.active {
+    color: var(--secondary);
   }
 
   & div > button {
@@ -183,23 +196,27 @@ button.desktop-explorer {
     padding-right: 0;
     display: flex;
     align-items: center;
-    font-family: var(--headerFont);
+    font-family: var(--bodyFont);
 
     & span {
-      font-size: 0.95rem;
+      font-size: 1rem;
       display: inline-block;
-      color: var(--secondary);
+      color: var(--darkgray);
       font-weight: $semiBoldWeight;
       margin: 0;
-      line-height: 1.5rem;
+      line-height: 1.6;
       pointer-events: none;
+    }
+
+    &:hover span {
+      color: var(--secondary);
     }
   }
 }
 
 .folder-icon {
   margin-right: 5px;
-  color: var(--secondary);
+  color: var(--darkgray);
   cursor: pointer;
   transition: transform 0.3s ease;
   backface-visibility: visible;
@@ -211,7 +228,7 @@ li:has(> .folder-outer:not(.open)) > .folder-container > svg {
 }
 
 .folder-icon:hover {
-  color: var(--tertiary);
+  color: var(--secondary);
 }
 
 .explorer {
